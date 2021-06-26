@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="@string/txt_datos"
+           android:textAlignment="center"
+
+           android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+       <EditText
+           android:id="@+id/txtnombre"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:ems="10"
+           android:hint="@string/txt_nombre"
+           android:inputType="textPersonName" />
+
+       <EditText
+           android:id="@+id/txtemail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:ems="10"
+           android:hint="@string/txt_email"
+           android:inputType="textEmailAddress" />
+
+       <Spinner
+           android:id="@+id/cbx_deptos"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:entries="@array/strDeptos" />
+
+       <EditText
+           android:id="@+id/txt_domicilio"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:ems="10"
+           android:hint="@string/txt_domiciolio"
+           android:inputType="textMultiLine"
+           android:lines="5" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Horario" />
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="horizontal">
+
+
+           <RadioButton
+               android:id="@+id/rbcompleto"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Completo" />
+
+           <RadioButton
+               android:id="@+id/rbmedio"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Medio TIempo" />
+       </RadioGroup>
+
+       <Button
+           android:id="@+id/btnguardar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Guardar"
+           android:layout_gravity="center" />
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
